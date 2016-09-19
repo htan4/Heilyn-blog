@@ -1,0 +1,151 @@
+/* ============
+   homepage.css
+   ============ */
+#banner{
+	font-size:1.6rem;
+	height:80rem;
+	background:rgba(0,0,0,0.5);
+}
+#banner .inner{
+	width:60rem;
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+	top:18rem;
+}
+.inner h1{
+	width:12rem;
+	margin:0 auto;
+	border:solid #ccc;
+	border-width: 3px 0 3px 0;
+	color:#fff;
+}
+.inner .sub-heading{
+	line-height:3rem;
+	margin:3rem 0;
+	font-size:1.8rem;
+	color:#fff;
+}
+#banner	a{
+	display:inline-block;
+	padding:1.3rem 5rem;
+	background:#333;
+	color:#fff;
+}
+#banner	a:hover{
+	text-decoration:none;
+}
+#banner .more{
+	margin-top:28rem;
+	color:#fff;
+}
+
+
+.green-section{
+	background:#1C87B0;
+	text-align:center;
+	color:#fff;
+}
+.green-section .wrapper{
+	padding:5rem 0;
+}
+.green-section p{
+	font-size:1.5rem;
+}
+.green-section .hr{
+	width:30%;
+	background-color:#078494;
+}
+.green-section .icon-group{
+	margin-top:4rem;
+}
+.icon-group .icon{
+	display:inline-block;
+	width:8rem;
+	height:8rem;
+	border:1px solid #0D6F7C;
+	transform:rotate(-45deg);
+	margin:3rem;
+}
+
+
+.gray-section{
+	background:#252F34;
+	color:#fff;
+}
+.article-preview > div{
+	float:left;
+	font-size:0;
+}
+.gray-section .img-section{
+	width:45%;
+}
+.img-section img{
+	width:100%;
+}
+.gray-section .text-section{
+	width:55%;
+}
+.text-section h2{
+	margin-top:5rem;
+	margin-left:5rem;
+}
+.text-section .sub-heading{
+	font-size:1.9rem;
+	margin-left:5rem;
+	margin-top:0;
+}
+.text-section p{
+	font-size:1.6rem;
+	margin-left:5rem;
+}
+.text-section > *{
+	max-width:90%;
+}
+.article-preview.mask{
+	background:rgba(255, 255, 255, 0.1);
+}
+
+
+.purple-section{
+	background:#3F3965;
+	color:#fff;
+	padding:8rem;
+}
+.purple-section .wrapper{
+	padding:5rem 0;
+}
+.purple-section .heading-wrapper{
+	text-align:center;
+}
+.purple-section .hr{
+	background:#373259;
+	width:60%;
+}
+.purple-section .card-group .card{
+	float:left;
+	width:50%;
+	min-height:30rem;
+	padding:5rem;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.card:first-child{
+	background:rgba(0,0,0,0.05);
+}
+.card:nth-child(2){
+	background:rgba(0,0,0,0.09);
+}
+.card.child3{
+	background:rgba(0,0,0,0.13);
+}
+.card.child4{
+	background:rgba(0,0,0,0.17);
+}
+.card.child5{
+	background:rgba(0,0,0,0.21);
+}
+.card.child6{
+	background:rgba(0,0,0,0.25);
+}

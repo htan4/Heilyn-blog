@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>关于我</title>
+	<!-- <link rel="icon" type="image/ico" href="favicon.ico"> -->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css"/>
+	<link rel="stylesheet" href="../src/css/common.css"/>
+	<link rel="stylesheet" href="../src/css/me.css"/>
+	<script src="../src/js/require.js" data-main="../src/js/main-me" defer></script>
+</head>
+<body>
+<!--[if lte IE8]>
+<p class="browserupgrade">您的浏览器版本过于老旧，请到<a href='http://browsehappy.com'>这里</a>更新</p>
+<![endif]-->
+
+<!-- header part start -->
+<header class="myself">
+	<nav class="clearfix">
+		<div class="heylyn"><a href="index.html">黑林博客</a></div>
+		<ul>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="article.html">博客文章</a></li>
+			<li><a href="me.html" class="active">关于我</a></li>
+			<li id="sidebarTrigger"><a href="#">更多</a></li>
+		</ul>
+	</nav>
+	<div id="banner">
+		<div class="inner">
+			<h1>关于我</h1>
+			<p class="sub-heading">美漂时间轴</p>
+		</div>
+	</div>
+</header>
+<!-- header part end -->
+
+<!-- content part start -->	
+<div class="content-wrap">
+
+	<!-- 模版定义开始 month组装在year里，而item组装在month里，就像一个俄罗斯套娃 -->	
+	<div class="hide">
+		<div id="tpl_scrubber_year">
+			<a href="javascript:;" class="s_year" id="scrubber_year_{year}">{year}
+				{list}
+			</a>
+		</div>
+
+		<div id="tpl_scrubber_month" >
+			<a href="javascript:;" class="s_month {year}_month" data-year="{year}" data-month="{month}" id="scrubber_month_{year}{month}" >{month}月</a>
+		</div>
+		
+		<div id="tpl_content_year">
+			<div class="c_year" id="content_year_{year}">{year}</div>
+			{list}
+		</div>
+		
+		<div id="tpl_content_month">
+			<div class="c_month" id="content_month_{year}_{month}">{month}月</div>
+			{list}
+		</div>
+		
+		<div id="tpl_content_item">
+			<div class="c_item c_item_{leftOrRight} {isFirst}" >
+				<div class="c_i_icon_arrow"></div>
+				<div class="c_i_icon_dot">
+					<div class="c_i_icon_dot_child">
+					</div>
+				</div>
+				<div class="c_i_head">
+					<div class="c_i_head_title">
+						<div class="c_i_head_title_icon">
+							{lunar}
+						</div>
+						{date}
+					</div>
+					<div class="c_i_head_intro">
+						<i class="ui_ico quote_before"></i>
+						{intro}
+						<i class="ui_ico quote_after"></i>	
+					</div>
+				</div>
+				<div class="c_i_media">
+					{media}
+				</div>
+				<div class="c_i_footer">
+					<div class="c_i_footer_info">
+						<a href="javascript:;" title="赞"><i class="ui_ico ico_zan"></i>({like})</a>
+						<a href="javascript:;" title="评论"><i class="ui_ico ico_com"></i>({comment})</a>
+					</div>
+					<div class="c_i_footer_like">
+						{like_format}人觉得很赞
+					</div>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<!-- 模版定义结束 -->	
+	
+	<div class="comWidth">
+		<div class="scrubber" id="scrubber"></div>
+		<div class="content" id="content"></div>	
+	</div>
+</div>
+<!-- content part end -->
+
+<!-- footer part start -->
+<footer>
+	<ul class="comWidth clearfix share-group">
+		<li><a href="#">版本更新</a></li>
+		<li><a href="#">帮助中心</a></li>
+		<li><a href="#">联系我们</a></li>
+		<li><a href="#">在线交流</a></li>
+		<li><a href="#">黑林微信</a></li>
+		<li><a href="#">更多信息</a></li>
+		<li><a href="#">更多产品</a></li>
+		<li><a href="#">服务信息</a></li>
+		<li><a href="#" class="backToTop">返回顶部</a></li>
+	</ul>
+	<div class="copy">
+		&copy; 黑林博客 - 2016
+	</div>
+</footer>
+<!-- footer part end -->
+<!-- sidebar start -->
+<div class="overlay"></div>
+<div id="sidebar">
+	<ul>
+		<li><a href="#">胜利</a></li>
+		<li><a href="#">脚步</a></li>
+		<li><a href="#">已经</a></li>
+		<li><a href="#">靠近</a></li>
+		<li><a href="#">非常好</a></li>
+	</ul>
+</div>
+<!-- sidebar end -->
+<script src="../src/js/data.js"></script>
+<script src="../src/js/GetLunarDay.js"></script>
+</body>
+</html>
